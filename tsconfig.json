@@ -1,0 +1,24 @@
+{
+ "include": ["src/**/*.ts"],
+ "files": ["src/types/express.d.ts"],
+ "compilerOptions": {
+  "types": ["node", "express"],
+   "target": "es2020",  // Menaikkan ke versi ECMAScript terbaru (ES2020)
+   "module": "commonjs",
+   "moduleResolution": "node",
+   "esModuleInterop": true,
+   "forceConsistentCasingInFileNames": true,
+   "strict": true,
+   "skipLibCheck": false,  // Disetel ke false untuk memeriksa file deklarasi tipe
+   "resolveJsonModule": true,
+   "isolatedModules": false,  // Disetel ke false agar modul dapat saling terhubung
+   "noEmit": false,  // Disetel ke false untuk menghasilkan berkas JavaScript
+   "strictPropertyInitialization": true,  // Disetel ke true untuk memeriksa inisialisasi properti secara ketat
+   "strictNullChecks": true,
+   "strictFunctionTypes": true,
+   "strictBindCallApply": true,
+   "allowSyntheticDefaultImports": true,
+   "baseUrl": "./",  // Menggunakan basis direktori saat ini sebagai titik awal untuk path
+   "esModuleInterop": true,
+ }
+}
